@@ -1,0 +1,275 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fffaf4;
+  color: #3e3e3e;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #3e3e3e;
+}
+
+/* Header */
+.header {
+  background-color: transparent;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.nav ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #3e3e3e;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #c89fa3;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* Hero */
+.hero-section {
+  position: relative;
+  background: url('img/hero-floral.jpg') center/cover no-repeat;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #eee;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border: none;
+  background-color: #f4c2c2;
+  color: #3e3e3e;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e8aeb7;
+  color: #fff;
+}
+
+/* Secciones */
+.section-padded {
+  padding: 5rem 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #c06c84;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #f15a69;
+  margin: 1rem auto 0;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+}
+
+.grid-item {
+  text-align: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(95, 94, 94, 0.06);
+  transition: transform 0.3s;
+}
+
+.grid-item:hover {
+  transform: scale(1.03);
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Formulario */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-submit {
+  border: none;
+  background-color: #f4c2c2;
+  color: #7c7676;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #e8aeb7;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(135deg, #ee4569, #dba8a8);
+  color: #fff;
+  padding: 3rem 2rem;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.footer-col h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #ffe2e7;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #f7f7f7;
+}
+
+/* Newsletter */
+.newsletter-form input {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  margin-right: 0.5rem;
+}
+
+.newsletter-form button {
+  padding: 0.6rem 1rem;
+  background-color: #c89fa3;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #d892a0;
+}
+
+/* Social Icons */
+.social-icons a {
+  margin: 0 0.3rem;
+  display: inline-block;
+}

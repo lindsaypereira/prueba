@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://github.com/lindsaypereira/web2025.git" >
+    <title>Pasteleria - La Casa De Los Pastele </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+             
+            <h2 class="logo">La casa De Los Pasteles </h2>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#arreglos">Pasteles </a></li>
+                    <li><a href="#eventos">piñateria</a></li>
+                    <li><a href="#pedidos">Pedidos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+            
+                <h2>"Más que pasteles, creamos momentos felices"</h2>
+                <p>Siempre pensando en ti, cada detalle hace la difrencia.</p>
+                <a href="#arreglos" class="btn">Ver Pasteles</a>
+            </div>
+        </section>
+
+        <section id="arreglos" class="section-padded">
+            <div class="container">
+                <h2 class="section-title">SECCIÓN DE PASTELES </h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="img/braunie.jpg" alt="pastel braunie 1">
+                        <h3> Pastel Braunie Fresa-Oreo</h3>
+                        <p>Perfecto para expresar amor.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/GIRASOL.jpeg" alt="girasol 2">
+                        <h3>PastelGourmet redondo</h3>
+                        <p>Perfecto para un regalo especial</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/gourmett.jpg" alt="gourmet 3">
+                        <h3>Pastel gourmet</h3>
+                        <p>Único en sabor y estilo.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/marmole vaini.jpg" alt="VAINILLA 4">
+                        <h3>Patel de Vainilla</h3>
+                        <p>Su diseño unico y exclusivo ahora glasiado con dulce de leche y  mermelada de fresa </p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/moramol dulce.jpg" alt="vainilla 5">
+                        <h3> Pastel Vaimilla</h3>
+                        <p>Diseños único y deliciosaperfectopara cualquier ocación.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/vainillaa marmo.jpg" alt="vainilla 6">
+                        <h3>Pastel vainilla </h3>
+                        <p>Belleza exótica en cada detalle.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="section-padded bg-light">
+            <div class="container">
+                <h2 class="section-title">Arreglos para tus Festejo </h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="img/arreglo.jpg" alt="Evento 1">
+                        <h3>Cumpleaños</h3>
+                        <p>Decoración de set completos.</p>
+                        <p>Arreglos festivos y coloridos.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/aniversarioo.webp" alt="Evento 4">
+                        <h3>Aniversarios</h3>
+                        <p>Detalles románticos .</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/areglo gradu.jpg" alt="Evento 5">
+                        <h3>Graduaciones</h3>
+                        <p>Celebraciones vibrantes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pedidos" class="section-padded">
+            <div class="container contact-grid">
+                <div class="contact-form-area">
+                    <h2 class="section-title">PEDIDOS Y ENCARGOS</h2>
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Tu Nombre:</label>
+                            <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Tu Email:</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+505 0000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Tipo de Pedido:</label>
+                            <select id="type" name="type" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="arreglo">Pasteles especiales</option>
+                                <option value="evento">Decoración de Evento</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Detalles de tu Pedido:</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Describe tu pedido, ocasión, nombre del pastel, fecha de entrega, etc." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="delivery-date">Fecha de Entrega (opcional):</label>
+                            <input type="date" id="delivery-date" name="delivery-date">
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar Pedido</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-area">
+                    <h3 class="section-title">Visítanos</h3>
+                    <div class="map-placeholder">
+                       <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.008479179314!2d-87.02894252577854!3d12.575731087654658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f70e51c3a655053%3A0xb98bd075c0b6b5e7!2sUNO%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sni!4v1721212345678!5m2!1ses!2sni" 
+  width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="address-details">
+                        <p><strong>Dirección:</strong> <span>De la gasolinera uno San Martin 25 Vrs al Sur</span></p>
+                        <p><strong>Teléfono:</strong> <span>+505 7880-3878</span></p>
+                        <p><strong>Email:</strong> <span>lacasadelospasteles@gamil.com</span></p>
+                        <p><strong>Horario:</strong> <span>Lunes-Sábados: 08am-07pm, Domingo: 08am-05pm</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#arreglos">Arreglos</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#pedidos">Pedidos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suscríbete</h4>
+                    <p>Recibe nuestras últimas ofertas y tendencias.</p>
+                    <form action="#" class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit">Suscribir</button>
+                    </form>
+                    <div class="social-icons">
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook"></a>
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram"></a>
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/twitterx--v1.png" alt="Twitter"></a>
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/pinterest--v1.png" alt="Pinterest"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 La Casa De Los Pasteles . Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
